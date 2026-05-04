@@ -1,14 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PDF Download Test Landing Page</title>
-    <meta
-      name="description"
-      content="A simple landing page for testing GA4 download tracking and k6 load tests."
-    >
-    <link rel="stylesheet" href="styles.css">
+    <title>تقرير العقارات السنوي 2025</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-WQPJF460RJ"></script>
     <script>
@@ -20,42 +16,25 @@
     </script>
   </head>
   <body>
-    <main class="page-shell">
-      <section class="hero" aria-labelledby="page-title">
-        <p class="eyebrow">GA4 + k6 test page</p>
-        <h1 id="page-title">Download the sample PDF and measure every click.</h1>
-        <p class="intro">
-          Use this lightweight landing page to validate GA4 download events and run
-          k6 traffic against both the page and the PDF file.
-        </p>
+    <main class="container mx-auto px-4 min-h-dvh flex items-center justify-center">
+      <section class="bg-gray-200 p-8 rounded-lg shadow-xl min-w-md inline-flex items-center justify-center flex-col" aria-labelledby="page-title">
+        <h1 class="text-3xl font-bold mb-12">تقرير العقارات السنوي 2025</h1>
 
-        <div class="actions">
-          <a
-            id="download-pdf"
-            class="button"
-            href="sample-report.pdf"
-            download
-            data-file-name="sample-report.pdf"
-          >
-            Download PDF
-          </a>
-          <span class="hint">Tracks a GA4 <code>file_download</code> event.</span>
-        </div>
-      </section>
+        <details class="relative styles_downloadDropdown__DbnXe">
+          <summary type="submit" class="bg-indigo-300 rounded-lg shadow-lg px-4 py-2 cursor-pointer">تحميل التقرير</summary>
 
-      <section class="metrics" aria-label="Test details">
-        <article>
-          <strong>Asset</strong>
-          <span>sample-report.pdf</span>
-        </article>
-        <article>
-          <strong>Analytics</strong>
-          <span>GA4 gtag event</span>
-        </article>
-        <article>
-          <strong>Load test</strong>
-          <span>k6 script included</span>
-        </article>
+          <div class="bg-indigo-50/50 absolute w-44 p-2 rounded-lg shadow-lg mt-2 styles_downloadDropdownMenu__FIB1T">
+            <a
+              id="download-pdf"
+              class="bg-indigo-50 p-4 block rounded-lg hover:bg-indigo-100"
+              href="sample-report.pdf"
+              download
+              data-file-name="sample-report.pdf"
+            >
+              التقرير السنوي
+            </a>
+          </div>
+        </details>
       </section>
     </main>
 
